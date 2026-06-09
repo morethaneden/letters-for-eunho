@@ -24,7 +24,7 @@ const toast = document.getElementById("toast");
 const startDate = new Date("2026-07-09");
 
 // 현재 날짜
-const today = new Date("");
+const today = new Date();
 
 // 오늘까지 열린 편지 개수 계산
 const unlockedCount = Math.floor(
