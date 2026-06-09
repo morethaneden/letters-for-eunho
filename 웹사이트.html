@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For Eunho</title>
+
+    <link rel="stylesheet" href="디자인.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Noto+Serif+KR:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Landing -->
+
+    <section id="landing">
+
+        <div class="landing-content">
+
+            <p class="date-range">
+                July 9 — July 22
+            </p>
+
+            <h1>
+                While I'm away, there's a letter waiting for you every day.
+            </h1>
+
+            <p class="subtitle">
+                From Eden
+            </p>
+
+            <button id="enterBtn">
+                Letters
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Letters -->
+
+    <section id="lettersPage" class="hidden">
+
+        <div class="header">
+
+            <h2>Letters for You</h2>
+
+            <p>
+                Open one each day
+            </p>
+
+        </div>
+
+        <div id="lettersContainer"></div>
+
+    </section>
+
+    <!-- Modal -->
+
+    <div id="letterModal" class="hidden">
+
+        <div class="modal-content">
+
+            <button id="closeBtn">
+                ×
+            </button>
+
+            <h2 id="letterTitle"></h2>
+
+            <div class="audio-section">
+
+                <p>
+                    Song of the Day
+                </p>
+
+                <audio
+                    id="audioPlayer"
+                    controls>
+                </audio>
+
+            <div id="letterText"></div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Toast -->
+
+    <div id="toast"></div>
+
+    <script src="편지.js"></script>
+
+</body>
+</html>
